@@ -1,0 +1,10 @@
+.information li {
+    font-weight: bold;
+}
+
+
+.information li  span {
+    font-weight: normal;
+    color: rgb(65, 63, 63);
+
+}
