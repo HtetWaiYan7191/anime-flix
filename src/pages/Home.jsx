@@ -13,7 +13,7 @@ const Home = () => {
     dispatch(fetchPopularAnime())
   },[])
   return (
-    <section className='home-section'>
+    <section className='home-section pt-28'>
       <div className='ads-trailer-container'>
 
       </div>
