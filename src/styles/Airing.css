@@ -1,0 +1,16 @@
+.airing-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+    height: 350px;
+    }
+    
+    .airing-card img {
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
