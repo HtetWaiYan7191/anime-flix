@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const fetchAiringAnime = createAsyncThunk('airing/fetchAiringAnime', async () => {
-    const response = await fetch('https://api.jikan.moe/v4/top/manga');
+    const response = await fetch('https://api.jikan.moe/v4/top/anime?filter=airing');
     if(!response.ok) {
         throw new Error('Network response was not ok')
     }
@@ -22,6 +22,7 @@ const airingSlice = createSlice({
     reducers:{},
     extraReducers:(builder) => {
         builder.addCase(fetchAiringAnime.fulfilled, (state, action) => {
+            state.loading = false;
             state.value = action.payload;
         })
     }
