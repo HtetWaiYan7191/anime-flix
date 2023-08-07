@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const fetchPopularAnime = createAsyncThunk('popular/fetchPopularAnime',  async () => {
-    const response = await fetch(`https://api.jikan.moe/v4/top/anime`);
+    const response = await fetch(`https://api.jikan.moe/v4/top/anime?filte=bypopularity`);
     if(!response.ok) {
         throw new Error('Network response was not ok');
     }
