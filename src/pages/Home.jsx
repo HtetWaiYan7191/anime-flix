@@ -8,7 +8,6 @@ import '../styles/Home.css'
 const Home = () => {
   const dispatch = useDispatch();
   const popularAnime = useSelector((state) => state.popular.value)
-  console.log(popularAnime)
   useEffect(() => {
     dispatch(fetchPopularAnime())
   },[])

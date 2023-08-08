@@ -18,7 +18,7 @@ const Airing = () => {
     {airingAnime.map((anime) => {
       return (
         <Link to={`/details/${anime.mal_id}`} key={anime.id}>
-        <div className='airing-card' > {/* Make sure to add a unique key prop */}
+        <div className='airing-card' >
           <img src={anime.images.jpg.image_url} alt="" className=" object-fill h-[350px]" />
         </div>
         </Link>
