@@ -12,8 +12,7 @@ export const fetchAiringAnime = createAsyncThunk('airing/fetchAiringAnime', asyn
         throw new Error('Network response was not ok')
     }
     const result = await response.json();
-    console.log(result)
-    return result.data  ;
+    return result.data;
 })
 
 const airingSlice = createSlice({

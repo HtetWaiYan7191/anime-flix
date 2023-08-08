@@ -3,6 +3,7 @@ import popularSliceReducer from "./popularSlice";
 import airingSliceReducer from './airingSlice';
 import upcomingSliceReducer from "./upcomingSlice";
 import detailSliceReducer from "./detailSlice";
+import searchSliceReducer from './searchSlice';
 
 const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ const store = configureStore({
         airing: airingSliceReducer,
         upcoming: upcomingSliceReducer,
         detail: detailSliceReducer,
+        search: searchSliceReducer,
     }
 })
 
